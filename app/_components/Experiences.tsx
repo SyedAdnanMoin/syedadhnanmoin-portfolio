@@ -428,8 +428,45 @@ export default function Experiences() {
     const yearAnchorRefs = useRef<Record<number, HTMLDivElement | null>>({});
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
+    // useGSAP(
+    //     () => {
+    //         const tl = gsap.timeline({
+    //             scrollTrigger: {
+    //                 trigger: containerRef.current,
+    //                 start: 'top 80%',
+    //                 end: 'bottom 70%',
+    //                 scrub: 0.5,
+    //             },
+    //         });
+
+    //         tl.from('.exp-row', {
+    //             y: 26,
+    //             opacity: 0,
+    //             stagger: 0.14,
+    //             ease: 'none',
+    //         });
+    //     },
+    //     { scope: containerRef },
+    // );
+
     useGSAP(
         () => {
+            // Mobile: no fade-in / no scroll animation
+            if (typeof window !== 'undefined') {
+                const isMobile = window.matchMedia(
+                    '(max-width: 1023px)',
+                ).matches;
+                if (isMobile) {
+                    gsap.set('.exp-row', {
+                        opacity: 1,
+                        y: 0,
+                        clearProps: 'transform',
+                    });
+                    return;
+                }
+            }
+
+            // Desktop: keep the current animation exactly
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: containerRef.current,
@@ -440,9 +477,9 @@ export default function Experiences() {
             });
 
             tl.from('.exp-row', {
-                y: 26,
+                y: 30,
                 opacity: 0,
-                stagger: 0.14,
+                stagger: 0.18,
                 ease: 'none',
             });
         },
