@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Anton, Roboto_Flex } from 'next/font/google';
 import { ReactLenis } from 'lenis/react';
-
+import { Analytics } from '@vercel/analytics/react';
 import 'lenis/dist/lenis.css';
 import './globals.css';
 import Footer from '@/components/Footer';
@@ -52,6 +52,7 @@ export default function RootLayout({
                 <Script id="disable-devtools" strategy="afterInteractive">
                     {`(function(){try{if(process.env.NODE_ENV!=="production")return;}catch(e){};})();`}
                 </Script>
+                <Analytics />
             </body>
         </html>
     );
