@@ -109,7 +109,7 @@ export const MY_EXPERIENCE = [
         logo: '/logo/Locomex.png',
         highlights: [
             'Developed modular backend services and integrated secure data processing workflows.',
-            'Collaborated with frontend to improve responsiveness and usability across devices.',
+            'Collaborated with the frontend team to improve responsiveness and usability across devices.',
             'Supported releases with clean version control practices and maintainable delivery.',
         ],
         tools: [
