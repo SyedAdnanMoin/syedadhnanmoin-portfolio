@@ -70,8 +70,8 @@ export const MY_EDUCATION = [
         id: 'anna-be',
         school: 'Anna University',
         degree: 'B.E. Computer Science and Engineering',
-        startYear: 2019,
-        endYear: 2023,
+        startYear: 2018,
+        endYear: 2022,
         logo: '/anna.png',
         coursework: [
             'Data Structures & Algorithms',
