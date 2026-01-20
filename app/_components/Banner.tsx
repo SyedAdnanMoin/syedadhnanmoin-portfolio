@@ -439,7 +439,7 @@ const Banner = () => {
                         </div>
                         <div>
                             <div className="text-3xl font-anton text-primary leading-none">
-                                2+
+                                5+
                             </div>
                             <div className="text-xs text-muted-foreground mt-1">
                                 Featured Projects
