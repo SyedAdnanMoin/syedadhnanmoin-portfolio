@@ -108,14 +108,19 @@ const AboutSection = () => {
                     {/* Right / description + bullets */}
                     <div ref={contentRef}>
                         <p className="max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
-                            I&apos;m a Software Engineer with 2+ years of
+                            {/* I&apos;m a Software Engineer with 2+ years of
                             experience building scalable backend systems,
                             distributed services, and AI-driven, data-intensive
                             applications. I&apos;ve worked on enterprise
                             solutions at Morgan Stanley and automation &amp;
                             analytics platforms at MilliporeSigma, using Python,
                             Java, SQL, React/TypeScript, and cloud
-                            infrastructure.
+                            infrastructure.  */}
+                            Software Engineer with 2+ years delivering
+                            API&apos;s, data pipelines, and distributed services
+                            across Morgan Stanley and MilliporeSigma. I work
+                            mostly in Python, Java Spring Boot, SQL, and cloud
+                            (AWS/GCP), with React/TypeScript when needed.
                         </p>
 
                         <ul className="mt-5 space-y-3 text-sm md:text-base text-muted-foreground">
