@@ -294,8 +294,11 @@ import { Mail, Linkedin, FileText } from 'lucide-react';
 // just the first words
 const TYPEWRITER_WORDS = ['SOFTWARE', 'FRONTEND', 'DATA'];
 
+// const RESUME_URL =
+//     'https://drive.google.com/file/d/1aHenQI5Zafna8lQGCJQr_HbU30pLGlCR/view?usp=drive_link';
+
 const RESUME_URL =
-    'https://drive.google.com/file/d/1aHenQI5Zafna8lQGCJQr_HbU30pLGlCR/view?usp=drive_link';
+    'https://drive.google.com/file/d/1efPNGkC-xmf1ruvjkVC_Jik7ID-KJu5e/view?usp=sharing';
 
 const Banner = () => {
     const [wordIndex, setWordIndex] = React.useState(0);
